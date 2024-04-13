@@ -1,0 +1,8 @@
+pg_dump -U postgres -d HealthFitnessClub -s -f "I:\Desk\COMP3005\Project\ddl.sql"
+
+
+pg_dump -U postgres -d HealthFitnessClub -a -f "I:\Desk\COMP3005\Project\dml.sql"
+
+pg_dump -U postgres -d HealthFitnessClub --data-only --inserts -t Credentials -f "I:\Desk\COMP3005\Project\inserts.sql"
+
+pg_dump -U postgres -d HealthFitnessClub -s -f "I:\Desk\COMP3005\Project\create_tables.sql"

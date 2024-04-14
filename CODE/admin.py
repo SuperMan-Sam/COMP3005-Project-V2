@@ -8,7 +8,6 @@ def room_management_ui():
         print("2. Delete Booking")
         print("3. Booking Details")
         print("4. Book Room")
-        print("5. Exit")
 
         choice = input("Enter your choice: ")
 
@@ -20,31 +19,8 @@ def room_management_ui():
             check_room_ui()
         elif choice == "4":
             book_room_ui()
-        elif choice == "5":
-            administrative_ui()
         else:
-            print("Invalid choice. Please enter a number between 1 and 5.")
-    
-def administrative_ui():
-    while True:
-        print("\nAdministrative System")
-        print("1. Room Booking Management")
-        print("2. Update Session")
-        print("3. Equipment")
-        print("4. Exit")
-
-        choice = input("Enter your choice: ")
-
-        if choice == "1":
-            room_management_ui()
-        elif choice == "2":
-            update_session_ui()
-        elif choice == "3":
-            equipment_ui()
-        elif choice == "4":
-            main_menu()
-        else:
-            print("Invalid choice. Please enter a number between 1 and 3.")
+            print("Invalid choice. Please enter a number between 1 and 4.")
             
 def update_room_ui():
     booking_id = input("Enter booking ID: ")

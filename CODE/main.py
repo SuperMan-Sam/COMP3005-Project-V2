@@ -25,27 +25,6 @@ def main_menu():
             break
         else:
             print("Invalid choice. Please enter a number between 1 and 4.")
-
-def administrative_ui():
-    while True:
-        print("\nAdministrative System")
-        print("1. Room Booking Management")
-        print("2. Update Session")
-        print("3. Equipment")
-        print("4. Exit")
-
-        choice = input("Enter your choice: ")
-
-        if choice == "1":
-            room_management_ui()
-        elif choice == "2":
-            update_session_ui()
-        elif choice == "3":
-            equipment_ui()
-        elif choice == "4":
-            main_menu()
-        else:
-            print("Invalid choice. Please enter a number between 1 and 3.")
             
 def memmber_menu():
     """Display the member menu and handle user input."""
